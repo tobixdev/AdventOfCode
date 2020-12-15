@@ -7,5 +7,5 @@ mod util;
 mod problems;
 
 fn main() {
-    problems::day14::stage_2::run();
+    problems::day15::stage_2::run();
 }
