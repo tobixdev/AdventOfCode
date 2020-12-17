@@ -1,2 +1,5 @@
-# AdventOfCode_2020
-Advent of Code written in (rather bad) Rust
+# AdventOfCode
+
+(Advent of Code)[https://adventofcode.com/] problems.
+
+DISCLAIMER: These solution were written for fun in languages I am not too familiar with. So you should probably think twice before using this code.  
