@@ -36,7 +36,7 @@ pub fn run() {
 
     let all_fields: HashSet<String> = rules.iter().cloned().map(|r| r.field).collect();
     let mut possible: Vec<HashSet<String>> = Vec::new();
-    for i in 0..all_fields.len() {
+    for _i in 0..all_fields.len() {
         possible.push(all_fields.clone());
     }
 
