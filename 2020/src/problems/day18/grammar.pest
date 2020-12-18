@@ -1,0 +1,6 @@
+Calculation = _{ SOI ~ Expr ~ EOI }
+Expr = { Mul }
+Term = _{Int | "(" ~ Expr ~ ")" }
+Mul = { Add ~ ("*" ~ Mul)? }
+Add = { Term ~ ("+" ~ Add)? }
+Int = @{ ASCII_DIGIT+ }
