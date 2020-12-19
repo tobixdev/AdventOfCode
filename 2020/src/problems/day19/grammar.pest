@@ -1,0 +1,9 @@
+RuleLine = _{ SOI ~ Rule ~ EOI }
+Rule = { Id ~ ":" ~ RuleBody }
+RuleBody = _{ Literal | Alternative | RuleList }
+Literal = { "\"" ~ ASCII_ALPHANUMERIC* ~ "\"" }
+Alternative = { RuleList ~ "|" ~ RuleList }
+RuleList = { Id* }
+Id = @{ ASCII_DIGIT+ }
+
+WHITESPACE = _{ " " | "\t" }
